@@ -1,0 +1,305 @@
+*{ }
+body{
+    background-color: rgb(205, 178, 191);
+}
+#header{
+    width:80%;
+    margin:auto;
+
+}
+/* This makes a pretty line  */
+hr{
+    height: 9px;
+    background-color: rgba(224, 85, 141, 0.711);
+    border-color:rgb(207, 28, 52);
+    width: 10px;
+    border-width: 5px;
+    border-style:inset;
+
+}
+.top {
+    position: relative;
+    background-color:rgb(249, 136, 194);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top-left-radius:  1rem;
+    border-top-right-radius:1rem;
+    border-bottom: 1rem;
+    padding-block-end:3rem;
+    height:100px;
+    
+
+}
+header {
+    position: absolute;
+    top:-3px;
+    left:20%;
+    right:20%;
+    font-size:20px;
+   
+}
+a:hover{
+    color:blueviolet
+}
+h1{
+    font-family: "Old Standard TT", serif;
+ text-align: center;
+ color: rgb(124, 16, 90);
+}
+
+
+
+h1::after {height:0 }
+
+h2{
+    color: rgb(224, 61, 170);
+font-family: "Zilla Slab", serif;
+font-size: 30px;
+text-align: center;
+}
+
+.para{
+font-size: 21.5px;
+background-color: rgb(212, 214, 215);
+text-align:center;
+border-radius: 1rem;
+padding:1rem;
+}
+
+#para2{
+font-size:21.5px ;
+background-color: rgb(212, 214, 215);
+text-align:center;
+border-radius: 1rem;
+padding:1rem;
+}
+
+#para3{
+font-size: 21.5px;
+display:flex;
+
+}
+.backpara{
+  background-color: rgb(212, 214, 215);
+text-align:center;
+border-radius: 1rem;
+padding:1rem;
+
+}
+#footer{font-family:"Old Standard TT", serif; 
+text-align: center;
+background-color:rgb(249, 136, 194);
+padding:4%;
+border-radius:10px;
+color:rgba(1, 22, 16, 0.963);
+font-size:18px ;
+}
+#footer a{
+text-decoration:none ;
+color:rgba(63, 5, 58, 0.963);
+}
+#footer a:hover{
+  color:aqua;
+}
+
+
+ul {
+    list-style:none;
+    background:rgb(138, 190, 153);
+width: 75px;
+padding:0;
+
+}
+
+ul li { 
+display: inline-block;
+position: relative;
+}
+
+
+ul li a {
+    display: block;
+    padding: 8px 15px;
+    color: rgb(224, 38, 134);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    border: 4px solid rgb(138, 67, 114);
+    background:rgb(200, 222, 206);
+    width:50px;
+}
+
+ul li ul.dropdown li {
+    display:block;
+  
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+display: none;
+
+
+}
+
+ul li a:hover{
+    background: rgb(248, 251, 248)
+
+}
+
+ul li:hover ul.dropdown {
+    display:block;
+}
+#cta{
+    height:35px;
+    margin-right:10%;
+    margin-top: 50px;
+    width:25%;
+    position:center;
+    padding: 12px;
+    text-align:center;
+    display:block;
+    margin-left:35%;
+    margin-right:25%;
+    background:linear-gradient(25000deg, rgb(220, 17, 139) 10%, rgb(240, 238, 242) 50%, rgb(220, 17, 139) 109%);
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:18px;
+    border-radius:1rem;
+    font-family:monospace;
+    font-size: 20px; 
+      }
+    #cta:hover {
+      color:rgb(104, 232, 232);
+    }
+   
+      img{
+    width:50%;
+}
+.img {
+    text-align: right;
+    margin-top: 25px;
+    display:flex;
+    padding:1%;
+
+}
+.img img {
+    order:2;
+    padding:1.5%;
+}
+
+
+
+.imgg {
+    
+    width:50%;
+    display: flex;
+    height:auto;
+    padding-left:1rem;
+    padding-right:1rem;
+
+
+}
+.imgg img {
+  width:100%;
+  height:auto;
+}
+.animate__animated.animate__bounce {
+    animation-timing-function:linear;
+    animation-direction:alternate;
+    animation-iteration-count:13;
+
+  }
+.animate__flipInY {
+    animation-timing-function:linear;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    
+  }
+#container {
+    min-width: 360px;
+    max-width: 640px;
+    border:4px solid rgb(237, 6, 133);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding:0.4rem;
+    position:relative;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(234, 9, 166); /* Fallback color */
+    background-color: rgba(227, 18, 158, 0.849); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #e1b9d4f4;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    text-align:center;
+    font-size:19px;
+    border: 1px solid #000000;
+    border-width:3.5px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+.close{
+    font-size:  29px;
+    width:10px;
+    color:rgb(16, 1, 29);
+    
+}
+  
+
+
+/*fooling around */
+
+.cta{position: relative;}
+  .cta:before, .cta:after  {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -17px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: 100%;
+    height: 146%;
+    z-index: -500000;
+    animation: steam 20s linear infinite;
+    border-radius:.2rem;
+    
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .cta:after {
+    filter: blur(50px);
+  }
+ 
+@media (min-width:768px){
+    #container {
+        max-width:1200px;
+      
+    }
+}
